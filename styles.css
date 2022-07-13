@@ -1,0 +1,106 @@
+:root {
+    --light-prime: #333533;
+    --prime: #202020;
+    --white: white;
+    --text: #d6d6d6;
+    --accent: #ffd100;
+    --light-accent: #ffee32;
+}
+body{
+    margin: 0;
+    background-color: var(--light-prime);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.display{
+    background-color: var(--prime);
+    height: 10rem;
+    width: 56rem;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px black;
+}
+.output-container{
+    background-color: black;
+    width: 53rem;
+    height: 8rem;
+    border-radius: 10px;
+    color: var(--light-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    overflow: auto;
+    position: fixed;
+}
+
+.keyboard-base{
+    height: 300px;
+    width: 900px;
+    background-color: var(--prime);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+button{
+    width: 60px;
+    height: 50px;
+    background: none;
+    color: var(--accent);
+    border-color: #ffee32;
+    font-size: 20px;
+    margin: 3px 2px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px black;
+}
+button:hover{
+    border-color: var(--prime);
+    color: var(--prime);
+    background-color: var(--light-accent);
+    cursor: pointer;
+}
+button:active{
+    background-color: var(--accent);
+}
+.backspace{
+    width: 120px
+}
+.space{
+    width:490px
+}
+.clear{
+    width: 120px
+}
+.cancel{
+    width: 120px
+}
+.enter{
+    width:120px
+}
+.shift{
+    width: 90px;
+}
+.shift2{
+    width: 90px;
+}
+.output-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.display::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px;
+}
