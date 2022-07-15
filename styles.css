@@ -19,7 +19,7 @@ body{
     background-color: var(--prime);
     height: 10rem;
     width: 56rem;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 50px;
     border-radius: 10px;
     display: flex;
@@ -40,7 +40,6 @@ body{
     overflow: auto;
     position: fixed;
 }
-
 .keyboard-base{
     height: 300px;
     width: 900px;
